@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="Image/BharatFixlogoo.png" type="image/x-icon" />
+
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--  Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="output.css" rel="stylesheet" />
+
+    <title>BharatFix</title>
+  </head>
+  <body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header class="bg-primaryColo dark:bg-darkColor fixed top-0 left-0 w-full z-50" id="header">
+      <nav class="container relative h-14 flex justify-between items-center">
+        <div>
+          <a href="#" class="text-2xl uppercase  font-oswald">
+            Bharat<span class="text-secondaryColor">Fix</span>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="text-2xl uppercase  font-oswald"  >
+          </span>
+          </a>
+        </div>
+
+
+
+
+        <div class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor dark:bg-darkColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto" id="nav-menu">
+          <ul class="flex flex-col text-center gap-5 md:flex-row">
+            <li>
+              <a href="#home" class="nav__link text-secondaryColor hover:text-secondaryColor ease-in duration-200">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav__link hover:text-secondaryColor ease-in duration-200">About Us</a>
+            </li>
+            <li>
+              <a href="#menu" class="nav__link hover:text-secondaryColor ease-in duration-200">Service</a>
+            </li>
+            <li>
+              <a href="#review" class="nav__link hover:text-secondaryColor ease-in duration-200">Review</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link hover:text-secondaryColor ease-in duration-200">Contact</a>
+            </li>
+          </ul>
+
+          <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close">
+            <i class="ri-close-line"></i>
+            
+          </div>
+         
+        </div>
+
+        <div class="flex items-center gap-5">
+          <i class="ri-moon-line cursor-pointer ml-4 text-xl" id="theme-toggle"></i>
+
+          <div class="md:hidden" id="humfix">
+            <i class="ri-menu-2-line cursor-pointer text-xl"></i>
+          </div>
+        </div>
+        <a href="http://127.0.0.1:61268/BharatFix/login-and-register-app/templates/login.html" class="login">Login</a>
+      </nav>
+    </header>
+    <main>
+      <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+      <section id="home">
+        <div class="container flex flex-col items-center gap-10 md:flex-row">
+          <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
+            <img src="./Image/logobharat.jpg" alt="home image" class="home__image w-60 rounded-lg md:w-full">
+          </div>
+
+          <div class="home__content text-center md:basis-1/2 md:text-start lg:basis-3/5">
+            <h1 class="home__title"> Home services at your doorstep.</h1>
+            <div class="separator mx-auto md:mx-0"></div>
+            <p class="paragraph"><b>Transforming houses into dream homes, one service at a time. Welcome to your home's best friend, where quality meets convenience. From plumbing to landscaping, we're your trusted partner for all your home service needs. Experience excellence, experience BharatFix.</b></p>
+            <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+              <div class="text-center">
+                <!-- <i class="fa-solid fa-utensils text-secondaryColor text-4xl"></i> -->
+                <p style="font-size: 35px; line-height: 1.12;">🤞<br/></p>
+                  Reliable
+              </div>
+
+              <div class="text-center">
+                <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+                <br />
+                Efficient
+              </div> 
+
+              <div class="text-center">
+                <i class="fa-brands fa-envira text-secondaryColor text-4xl"></i>
+                <br />
+                Trusted
+              </div>
+            </div>
+
+            <a href="http://127.0.0.1:61268/BharatFix/readMore.html" class="btn btn-primary">learn more</a>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!--~~~~~~~~~~~~~~~ Promo ~~~~~~~~~~~~~~~-->
+      <section id="promo">
+        <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
+          <!-- card 1 -->
+          <div class="promo__card-1 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+            <img src="https://t4.ftcdn.net/jpg/00/61/47/39/360_F_61473917_qV9KXySxtMhPxhKZMI43bPutXVU375do.jpg" alt="promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
+
+            <div class="space-y-2 pt-5 md:pt-0">
+              <h3 class="card__title">GET A 20% DISCOUNT ON FIRST SERVICE</h3>
+              <a href="#" class="text-xs text-secondaryColor">Book now</a>  
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="promo__card-2 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+            <img src="https://media.istockphoto.com/id/1457385092/photo/an-asian-young-technician-service-man-wearing-blue-uniform-checking-cleaning-air-conditioner.jpg?s=612x612&w=0&k=20&c=Tqu5jMzD1TKFO1Fvow6d0JMDsEGU8T3kToP706bQFQI=" alt="promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
+
+            <div class="space-y-2 pt-5 md:pt-0">
+              <h3 class="card__title">GET A 10% DISCOUNT ON WEEKEND</h3>
+              <a href="#" class="text-xs text-secondaryColor">Book now</a>  
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
+      <section id="about">
+        <div class="container flex flex-col gap-10 md:flex-row">
+          <div class="about__img flex-1">
+            <img src="https://thumbs.dreamstime.com/b/washing-machine-repair-technician-washer-service-washing-machine-repair-service-young-male-technician-blue-uniform-examining-119475972.jpg" alt="about image" class="rounded-lg">
+          </div>
+
+          <div class="about__content flex-1">
+            <h2 class="section__title">ONE-STOP SHOP FOR ALL YOUR HOME SERVICE NEEDS.</h2>
+            <div class="separator"></div>
+            <p class="paragraph">Discover unparalleled home service excellence with us. From cleaning to repairs, we're your go-to for all needs. Enjoy convenience and quality, all in one place. Your home, perfected.</p>
+            <ul class="grid grid-cols-2 py-5 space-y-1">
+              <li class="text-xs text-paragraphColor"> 
+                <i class="fa-solid fa-check text-secondaryColor"></i> 
+                <b>Service Quality</b>
+              </li>
+              <li class="text-xs text-paragraphColor">
+                <i class="fa-solid fa-check text-secondaryColor"></i> 
+                <b>Customer Satisfaction</b>
+              </li>
+              <li class="text-xs text-paragraphColor"> 
+                <i class="fa-solid fa-check text-secondaryColor"></i> 
+                <b>Service Value</b>
+              </li>
+              <li class="text-xs text-paragraphColor">
+                <i class="fa-solid fa-check text-secondaryColor"></i> 
+                <b>Price Fairness</b>
+              </li>
+            </ul>
+            <a href="http://127.0.0.1:61268/BharatFix/aboutUs.html" class="btn btn-primary">About us</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu">
+        <div class="container">
+          <div class="max-w-md mx-auto text-center">
+            <h2 class="section__title">OUR BEST Service</h2>
+            <div class="separator mx-auto"></div>
+            <p class="paragraph">Elevate your experience with our exceptional services, setting new standards of excellence. Trust us to deliver excellence every time, tailored to your needs.</p>
+            
+            
+            <div class="tabs_wrap">
+              <ul class="flex flex-wrap justify-center gap-2 py-10">
+                <li data-tabs="all" class="btn bg-primaryColorLight dark:bg-darkColorLight active">All</li>
+                <li data-tabs="homeap" class="btn bg-primaryColorLight dark:bg-darkColorLight">Home Appliances</li>
+                <li data-tabs="clepc" class="btn bg-primaryColorLight dark:bg-darkColorLight">Salon & Spa</li>
+                <li data-tabs="sals" class="btn bg-primaryColorLight dark:bg-darkColorLight">Cleaning & pest control</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="menu__items">
+            <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+             
+              <a href="http://127.0.0.1:61268/BharatFix/plumber.html"><li class="item_wrap homeap">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/cms/529159969Boilermaker.jpg=ws1280x960"  alt="plumber image" class="w-60 h-96 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24 ">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Plumber</h4>
+                    <p class="paragraph">This is a Plumber Section. If you face any water related problem then  <b>Click here.</b></p>
+                  </div>
+
+                  <p class="text-secondaryColor">599/- INR</p>
+                </div>
+              </li>
+            </a>
+
+            <a href="http://127.0.0.1:61268/BharatFix/plumber.html"><li class="item_wrap homeap">
+              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi5QqPfI7YwbtGFd-r6j6Ny95GQvVMa2nj8SxinlE0iOefGa4hV-7rnt_ZQg&s"  alt="painter image" class="w-60 h-96 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24 ">
+              </div>
+
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="card__title">Painter</h4>
+                  <p class="paragraph">This is a Painter Section. If you face any paint related problem then <b>Click here.</b></p>
+                </div>
+
+                <p class="text-secondaryColor">899/- INR</p>
+              </div>
+            </li>
+          </a>
+
+          <a href="http://127.0.0.1:61268/BharatFix/plumber.html>li class="item_wrap homeap">
+            <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+              <img src="https://img.freepik.com/free-photo/checking-conditioner_1098-17787.jpg"  alt="AC/Cooler image" class="w-60 h-96 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24 ">
+            </div>
+
+            <div class="pt-5">
+              <div class="mb-2">
+                <h4 class="card__title">AC / Cooler</h4>
+                <p class="paragraph">This is a AC / Cooler Section. If you face any AC or Cooler related problem then  <b>Click here.</b></p>
+              </div>
+
+              <p class="text-secondaryColor">499/- INR</p>
+            </div>
+          </li>
+        </a>
+
+        <a href="http://127.0.0.1:5501/plumber.html"><li class="item_wrap homeap">
+          <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+            <img src="https://media.istockphoto.com/id/1502418546/photo/plumber-installing-or-repairing-system-of-water-filtration-water-purification-filter-install.webp?b=1&s=170667a&w=0&k=20&c=eT9Xc4jDn02aMtCa8OgAzW-Yft5wdkwGvqwu5qWDjjc="  alt="purifier image" class="w-60 h-96 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24 ">
+          </div>
+
+          <div class="pt-5">
+            <div class="mb-2">
+              <h4 class="card__title">Purifier</h4>
+              <p class="paragraph">This is a Purifier Section. If you want face any problem in water purifier then <b>Click here.</b></p>
+            </div>
+
+            <p class="text-secondaryColor">599/- INR</p>
+          </div>
+        </li>
+      </a>
+
+      <a href="http://127.0.0.1:5501/plumber.html"><li class="item_wrap homeap">
+        <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+          <img src="https://media.istockphoto.com/id/1210163723/photo/beautiful-living-room-interior-with-colorful-area-rug-large-couch-and-abundant-natural-light.jpg?s=612x612&w=0&k=20&c=v0_G3q_E2b5wfQz55ER3EhylX1p02rN-tGaHiKfw2XM="  alt="sofa & carpet image" class="w-60 h-96 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24 ">
+        </div>
+
+        <div class="pt-5">
+          <div class="mb-2">
+            <h4 class="card__title">Sofa & Carpet</h4>
+            <p class="paragraph">This is a Bed & Sofa Section. If you face any sofa, bed & carpet related problem then Click here.</p>
+          </div>
+
+          <p class="text-secondaryColor">499/- INR</p>
+        </div>
+      </li>
+    </a>
+
+              <!-- clepc  -->
+              <a href="http://127.0.0.1:5501/plumber.html">
+                <li class="item_wrap clepc">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://media.istockphoto.com/id/639607852/photo/hairstylist-serving-client-at-barber-shop.jpg?s=612x612&w=0&k=20&c=-kBoMs26KIX1Hl6uh_VLRHCtLxnLYyq9a0n7X8iu5MQ=" alt="salon image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Men's Salon</h4>
+                    <p class="paragraph">Hey! do you want to take a hair cut then <b>Click Here.</b></p>
+                  </div>
+
+                  <p class="text-secondaryColor">999/- INR</p>
+                </div>
+              </li>
+            </a>
+
+            <a href="http://127.0.0.1:5501/plumber.html">
+              <li class="item_wrap clepc">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://media.istockphoto.com/id/654287924/photo/man-having-back-massage-at-the-health-spa.jpg?s=612x612&w=0&k=20&c=svtS3JFrHC_JyOepl7SLoBiVL9jpz3W5f1WpHAmSdZI=" alt="men's spa image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Men's Spa</h4>
+                    <p class="paragraph">Are you tired? Want a full body massage then <b>Click Here.</b> </p>
+                  </div>
+
+                  <p class="text-secondaryColor">959/-  INR</p>
+                </div>
+              </li>
+            </a>
+
+            <a href="http://127.0.0.1:5501/plumber.html">
+              <li class="item_wrap clepc">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxbuNWumnT5SMr0cuuigXb-aGUBs2FpK5MgADlUFg107944NtGpbn4TqHb_A&s" alt="homeap image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Women's Salon</h4>
+                    <p class="paragraph">Hey lady! do you want beautiful hair cut <b>Click Here.</b></p>
+                  </div>
+
+                  <p class="text-secondaryColor">1199/- INR</p>
+                </div>
+              </li>
+            </a>
+
+            <a href="http://127.0.0.1:5501/plumber.html">
+              <li class="item_wrap clepc">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE-vf8PIGiUPJwxcq6UxLNU9XZLmdcg7E_11qsniHVR1iUqlMCdHByq-OMJA&s" alt="homeap image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Women's Spa</h4>
+                    <p class="paragraph">Are you tired? Want a full body massage then <b>Click Here.</b> </p>
+                  </div>
+
+                  <p class="text-secondaryColor">1599/- INR</p>
+                </div>
+              </li>
+            </a>
+
+            <a href="http://127.0.0.1:5501/plumber.html">
+              <li class="item_wrap clepc">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://images.shaadisaga.com/shaadisaga_production/photos/pictures/002/809/724/new_medium/mini_magick20210726-29010-18tgy42.jpg?1627290298" alt="homeap image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Bridal Services</h4>
+                    <p class="paragraph">Congratulation! Get ready quickly just <b>Click Here.</b></p>
+                  </div>
+
+                  <p class="text-secondaryColor">1599/- INR</p>
+                </div>
+              </li>
+            </a>
+
+            <a href="http://127.0.0.1:5501/plumber.html">
+              <li class="item_wrap clepc">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhJUgxzU7K6auFKhFbGK2GOVI0xu2NAlhVgBSNq5Cni3YLyScDL2G8FY89Q&s" alt="homeap image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Groom Services</h4>
+                    <p class="paragraph">Congratulation! Get ready quickly just <b>Click Here.</b></p>
+                  </div>
+
+                  <p class="text-secondaryColor">1699/- INR</p>
+                </div>
+              </li>
+            </a>
+
+              <!-- sals  -->
+              <a href="http://127.0.0.1:5501/plumber.html">
+              <li class="item_wrap sals">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlYC5OA6OwpE1fbtFIIqgZAJn4I-zMkBNQKq_GwmGJpPxjAFNY4qp-5xQgTw&s" alt="homeap image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Full home Cleaning</h4>
+                    <p class="paragraph">Take a full inside home cleaning <b>Click Here.</b></p>
+                  </div>
+
+                  <p class="text-secondaryColor">3999/- INR</p>
+                </div>
+              </li>
+              </a>
+
+              <a href="http://127.0.0.1:5501/plumber.html">
+              <li class="item_wrap sals">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsaTwHUeDdXLcs5SZ7yGr3zU-Z-DUC8pnK8zB2xO7k2WCpNUNwU2H71gM2g&s" alt="homeap image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">home garden cleaning</h4>
+                    <p class="paragraph">Get a full home garden cleaning <b>Click Here.</b></p>
+                  </div>
+
+                  <p class="text-secondaryColor">2999/- INR</p>
+                </div>
+              </li>
+              </a>
+
+              <a href="http://127.0.0.1:5501/plumber.html">
+              <li class="item_wrap sals">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://media.istockphoto.com/id/1447180266/photo/hotel-cleaning-service.jpg?s=612x612&w=0&k=20&c=-wT9Jwd0tks6bRLoUeSwXjc0HxLlA-1KjFWnYvoGh8g=" alt="homeap image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Bathroom & kitchen Cleaning</h4>
+                    <p class="paragraph">Take a full bathroom and kitchen services just <b>Click Here.</b></p>
+                  </div>
+
+                  <p class="text-secondaryColor">999/- INR</p>
+                </div>
+              </li>
+              </a>
+
+              <a href="http://127.0.0.1:5501/plumber.html">
+              <li class="item_wrap sals">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8GGAOf67nw9O_GAkbfmLnGF5nI46ywzbEXCSMFv1rTg&s" alt="homeap image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Sofa & carpet</h4>
+                    <p class="paragraph">You can clean your bed, sofa and carpet by just <b>Click Here.</b></p>
+                  </div>
+
+                  <p class="text-secondaryColor">399/- INR</p>
+                </div>
+              </li>
+              </a>
+
+              <a href="http://127.0.0.1:5501/plumber.html">
+              <li class="item_wrap sals">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aOyInoYcy1N0Z565UhY8uVWLO6KQ9PyhWnNuh_fVp_D7HBTOciaNYfijmA&s" alt="homeap image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">vechicle cleaning</h4>
+                    <p class="paragraph">Take a full car or bike wash just <b>Click Here.</b></p>
+                  </div>
+
+                  <p class="text-secondaryColor">299/- INR</p>
+                </div>
+              </li>
+              </a>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+     <section id="review" class="bg-primaryColorLight dark:bg-darkColorLight py-20">
+      <div class="customer__review container">
+        <div class="max-w-md mx-auto text-center">
+          <h2 class="section__title">CUSTOMER REVIEW</h2>
+          <div class="separator mx-auto"></div>
+          <p class="paragraph">Explore our trusted service: quality, on-time reliability, and unwavering professionalism. Join us and share your satisfaction!</p>
+        </div>
+
+        <div class="swiper py-10">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                <p class="paragraph">I had a plumbing emergency, and BharatFix saved the day! Quick response, professional service, and my issue was fixed in no time. Highly recommended!</p>
+                <div class="flex items-center">
+                  <img src="img/review-1.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                  <div class="ml-2">
+                    <p class="font-oswald uppercase">Tezu</p>
+                    <p class="paragraph"></p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                <p class="paragraph">Emergency plumbing fixed fast by BharatFix! Professional, quick, highly recommended!</p>
+                <div class="flex items-center">
+                  <img src="img/review-2.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                  <div class="ml-2">
+                    <p class="font-oswald uppercase">Aarya</p>
+                    <p class="paragraph"></p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                <p class="paragraph">Electrical problem solved swiftly by BharatFix! Professional service, quick response, highly recommend!</p>
+                <div class="flex items-center">
+                  <img src="img/review-3.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                  <div class="ml-2">
+                    <p class="font-oswald uppercase">Saurabh</p>
+                    <p class="paragraph"></p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                <p class="paragraph">BharatFix beautician service exceeded my expectations! Their expertise, promptness, and professionalism left me thoroughly impressed. Highly recommended for anyone seeking top-notch beauty services!</p>
+                <div class="flex items-center">
+                  <img src="img/review-4.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                  <div class="ml-2">
+                    <p class="font-oswald uppercase">Nami</p>
+                    <p class="paragraph"></p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                <p class="paragraph">BharatFix provided swift, professional plumbing service during my emergency. Highly recommended for their quick response and effective solutions. Grateful for their expertise!</p>
+                <div class="flex items-center">
+                  <img src="img/review-5.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                  <div class="ml-2">
+                    <p class="font-oswald uppercase">John doe</p>
+                    <p class="paragraph"></p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
+    <section id="contact" class="bg-secondaryColor py-16">
+      <div class="container flex flex-col gap-5 md:items-center md:flex-row">
+        <div class="space-y-4 md:flex-1">
+          <h2 class="section__title text-blackColor">GET EXCLUSIVE UPDATE</h2>
+          <p class="text-sm">Unlock exclusive home service offers! Quality solutions for your needs. Join now.</p>
+        </div>
+
+        <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+          <input type="email" placeholder="Email address" class="p-2 text-blackColor rounded-lg outline-none md:w-full">
+          <a href="" class="flex items-center justify-center gap-2 btn bg-blackColor hover:opacity-75">
+            <i class="fa-solid fa-paper-plane"></i>
+            Subscribe
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+  <footer>
+    <section class="footer">
+      <div class="container">
+        <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+          <li>
+            <div class="space-y-3">
+              <a href="" class="text-4xl font-oswald uppercase">
+                Bharat<span class="text-secondaryColor">Fix</span>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="flex flex-col gap-3">
+              <h3 class="text-lg uppercase font-oswald">SUPPORT</h3>
+              <a href="" class="text-xs hover:text-secondaryColor">FAQ's</a>
+              <a href="" class="text-xs hover:text-secondaryColor">Privacy Policy</a>
+              <a href="" class="text-xs hover:text-secondaryColor">Term & Condition</a>
+              <a href="" class="text-xs hover:text-secondaryColor">Contact</a>
+            </div>
+          </li>
+
+          <li class="space-y-8">
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase font-oswald">phone</h3>
+
+              <p class="flex items-center gap-2 text-xs">
+                <i class="fa-solid fa-phone text-lg text-secondaryColor"></i>
+                +1 800 007 026
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase font-oswald">email</h3>
+
+              <p class="flex items-center gap-2 text-xs">
+                <i class="fa-solid fa-envelope text-lg text-secondaryColor"></i>
+                bharatfix@email.com
+              </p>
+            </div>
+          </li>
+
+          <li class="space-y-8">
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase font-oswald">address</h3>
+
+              <p class="flex items-center gap-2 text-xs">
+                <i class="fa-solid fa-location-dot text-lg text-secondaryColor"></i>
+                Corporate office, Noida, Uttar Pradesh 
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase font-oswald">follow us</h3>
+
+              <div class="space-x-3">
+                <i class="fa-brands fa-facebook-f text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                <i class="fa-brands fa-twitter text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                <i class="fa-brands fa-square-instagram text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="flex flex-col items-center border-t border-primaryColorLight dark:border-darkColorLight py-5 md:flex-row md:justify-between">
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+  <a href="#" class="fixed right-4 -bottom-1/2 bg-secondaryColor shadow-sm inline-block px-4 py-2 rounded-full text-lg text-blackColor z-50 hover:-translate-y-1 ease-in duration-200" id="scroll-up">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      speed: 400,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      grabCursor: true,
+      breakpoints: {
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 1024px
+        1024: {
+          slidesPerView: 3,
+        }
+      }
+    });
+  </script>
+
+  <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+  <script src="main.js"></script>
+</body>
+</html>
